@@ -1,0 +1,154 @@
+---
+title: "Plano Amostral"
+author: "CGINF"
+format: 
+  revealjs:
+    footer: "CGINF"
+incremental: false
+embed-resources: true
+---
+
+## Visão Geral da Amostragem e Estimação
+
+Bibliografia Básica:
+
+BOLFARINE, H.; BUSSAB, W. O. Elementos de Amostragem. São Paulo: ABE - Projeto Fisher, Edgard Blücher, 2005.
+
+-   Queremos garantir uma amostra representativa da população, suficiente (para que o resultado tenha confiabilidade), e aleatória (retirada por sorteio não viciado).
+
+## Inferência Estatística
+
+-   Consiste em fazer afirmações probabilísticas sobre as características do modelo probabilístico, que se supõe representar uma população, a partir dos dados de uma amostra aleatória (probabilística) desta mesma população".
+
+-   Por que usar uma AMOSTRA?
+
+    -   economia;
+
+    -   rapidez;
+
+    -   para evitar a exaustão/extinção da população.
+
+## 
+
+```{r}
+knitr::include_graphics("img/amostragem.JPG")
+```
+
+## 
+
+=\> Estimar quais são os possíveis valores dos parâmetros (Estimação de Parâmetros):
+
+A média populacional (\\(\\mu\\)) é calculada da seguinte forma:
+
+$$ 
+\overline{Y} = \frac{1}{N}\sum_{i\in U} y_i\,\,
+$$ Onde:
+
+\- \\(N\\) é o tamanho da população.
+
+\- \\(y_i\\) representa cada elemento da população.
+
+\- \\(\\sum\\) indica a soma dos valores de \\(y_i\\) para todos os elementos da população.
+
+## 
+
+=\> Testar hipóteses sobre as características do modelo: parâmetros, forma da distribuição de probabilidades, etc.
+
+(Testes de Hipóteses).\
+- o valor da média $x̄$
+
+de uma variável que segue uma distribuição é maior do que um certo valor?
+
+-   o modelo probabilístico da população é uma distribuição normal?
+
+-   o valor da média de uma variável que segue uma distribuição normal em uma população é diferente da mesma média em outra população?
+
+## 
+
+```{r}
+knitr::include_graphics("img/tipos_amostragem.JPG")
+```
+
+## Distribuição Amostral
+
+Os valores dos parâmetros do modelo populacional calculados em uma amostra são chamados de estatísticas:
+
+| Parâmetros (População)  | Estatísticas (Amostra) |
+|:-----------------------:|:----------------------:|
+|        Média (μ)        |           $x̄$            |
+|    Variância (σ\^2)     |          s\^2          |
+|    Desvio Padrão (σ)    |           s            |
+|      Proporção (π)      |           p            |
+| Número de elementos (N) |           n            |
+
+## 
+
+```{r}
+knitr::include_graphics("img/simples.JPG")
+```
+
+## 
+
+```{r}
+knitr::include_graphics("img/proporcao.JPG")
+```
+
+## 
+
+```{r}
+knitr::include_graphics("img/ic.JPG")
+```
+
+## 
+
+```{r}
+knitr::include_graphics("img/ae.JPG")
+```
+
+## 
+
+```{r}
+knitr::include_graphics("img/ae_estimadores.JPG")
+```
+
+## 
+
+```{r}
+knitr::include_graphics("img/ae_variancia.JPG")
+```
+
+## 
+
+```{r}
+knitr::include_graphics("img/ae_var2.JPG")
+```
+
+## Exemplo
+
+```{r, fig.height= 6, fig.width= 8, dpi= 300}
+knitr::include_graphics("img/amostra.JPG", dpi = 300)
+```
+
+## Estatísticas amostrais
+
+```{r, fig.height= 6, fig.width= 8, dpi= 300}
+knitr::include_graphics("img/est_amostral.JPG",  dpi = 300)
+```
+
+## Estatísticas amostrais
+
+```{r}
+knitr::include_graphics("img/est_amostral2.JPG", dpi = 300)
+```
+
+## Estimativas para a média populacional
+
+```{r}
+knitr::include_graphics("img/media.JPG", dpi = 300)
+```
+
+## Estatísticas para a proporção populacional
+
+```{r}
+knitr::include_graphics("img/prop.JPG", dpi = 300)
+```

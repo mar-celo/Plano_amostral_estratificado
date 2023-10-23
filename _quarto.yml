@@ -1,0 +1,13 @@
+project:
+  title: "index"
+  output-dir: docs
+
+format:
+  html:
+    theme: cerulean
+    css: styles.css
+    toc: true
+
+
+
+
